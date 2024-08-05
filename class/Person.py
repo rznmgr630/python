@@ -8,3 +8,24 @@ class Person:
 
 person1=Person('Rajan');
 person1.talk();
+
+#=========================== INHERITANCE
+class Animal:
+  def walk(self):
+    print('Can walk')
+
+
+class Dog(Animal):
+  pass;
+
+class Cat(Animal):
+  def eatMouse(self):
+    print('Cat eats mouse')
+
+
+dog=Dog();
+dog.walk()
+
+cat=Cat();
+cat.walk()
+cat.eatMouse()
