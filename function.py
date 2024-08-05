@@ -28,3 +28,23 @@ def square(value):
 
 result=square(12);
 print(result)
+
+
+# ====================== REUSABLE FUNCTION ==================
+def emojiMapper(message):
+  splittedMsg=message.split(' ');
+
+  emoji_mapper={
+    ':)':'😊',
+    ':(':'😒'
+  }
+
+  output=''
+  for msg in splittedMsg:
+    output+=emoji_mapper.get(msg,msg);
+
+  return output
+
+
+msg=input('Enter your message? ')
+print(emojiMapper(msg))
