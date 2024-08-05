@@ -6,6 +6,9 @@ greetUser();
 
 
 # ==============PARAMETER FUNCTIONS===================
+# NOTE: If you want to use positional and keyword arguments you must have the positional argument at first
+# and then the keyword argument
+
 # postional arguments
 def sum(a,b):
   print(f'The sum of {a} and {b} is {a+b}')
