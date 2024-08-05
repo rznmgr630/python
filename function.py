@@ -20,3 +20,11 @@ def calculateTotal(total,shipping,discount):
   print(total-(total+shipping)*discount)
 
 calculateTotal(100,10,.1)
+
+# ====================== RETURN FUNCTIONS =================
+
+def square(value):
+  return value*value;
+
+result=square(12);
+print(result)
